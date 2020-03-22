@@ -1,7 +1,8 @@
 {
     "name": "screeps-scripts",
     "description": "Vimal's scripts for Screeps",
-    "dependencies": {
+    "version": "1.0.0",
+    "devDependencies": {
         "@types/node": "13.9.2"
     }
 }
