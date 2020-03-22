@@ -5,5 +5,5 @@
 # Ignore node_modules folder
 node_modules/
 
-# Ignore jsOutput folders that contain transpiled javascript
+# Ignore target folder that contains transpiled javascript
 */target/
