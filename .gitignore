@@ -6,4 +6,4 @@
 node_modules/
 
 # Ignore target folder that contains transpiled javascript
-*/target/
+**/target/
