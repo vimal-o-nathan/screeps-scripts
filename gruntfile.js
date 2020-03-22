@@ -6,11 +6,17 @@ module.exports = function(grunt) {
     var branch = grunt.option('branch') || config.branch;
     var ptr = grunt.option('ptr') ? true : config.ptr;
 
+    grunt.loadNpmTasks('grunt-ts');
     grunt.loadNpmTasks('grunt-screeps');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-copy');
 
     grunt.initConfig({
+        ts: {
+            default: {
+                tsconfig: './tsconfig.json'
+            }
+        },
         screeps: {
             options: {
                 email: email,
@@ -47,5 +53,5 @@ module.exports = function(grunt) {
         }
     });
 
-    grunt.registerTask('default', ['clean', 'copy:screeps', 'screeps']);
+    grunt.registerTask('default', ['ts', 'clean', 'copy:screeps', 'screeps']);
 }

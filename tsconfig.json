@@ -4,6 +4,9 @@
         "target": "ES6",
         "module": "commonjs",
         "sourceMap": true,
-        "outDir": "target"
-    }
+        "outDir": "./target"
+    },
+    "exclude": [
+        "./node_modules"
+    ]
 }

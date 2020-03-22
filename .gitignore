@@ -13,3 +13,7 @@ dist/
 
 # Ignore the .screeps.json file containing personal information
 .screeps.json
+
+# Ignore grunt's created TypeScript files
+.baseDir.ts
+.tscache
