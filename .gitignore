@@ -7,3 +7,9 @@ node_modules/
 
 # Ignore target folder that contains transpiled javascript
 **/target/
+
+# Ignore files in the dist folder (used for flattening folder structure prior to uploading to screeps)
+dist/
+
+# Ignore the .screeps.json file containing personal information
+.screeps.json
