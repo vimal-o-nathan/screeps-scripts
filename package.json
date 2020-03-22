@@ -1,0 +1,7 @@
+{
+    "name": "screeps-scripts",
+    "description": "Vimal's scripts for Screeps",
+    "dependencies": {
+        "@types/node": "13.9.2"
+    }
+}
