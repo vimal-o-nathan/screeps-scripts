@@ -2,6 +2,7 @@
 ## My workspace for my screeps scripts
 ### Using grunt-screeps
 In order to get grunt-screeps (see gruntfile.js) to work, in order to submit code via grunt, the user will need to do the following:
+* Run `npm install` to pull all dependencies locally
 * Add a .screeps.json file to the root of this directory. The template should look like the following:
 ```
 {
