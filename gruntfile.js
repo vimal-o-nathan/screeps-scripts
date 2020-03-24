@@ -16,17 +16,6 @@ module.exports = function(grunt) {
             default: {
                 tsconfig: './tsconfig.json'
             }
-        },
-        screeps: {
-            options: {
-                email: email,
-                password: password,
-                branch: branch,
-                ptr: ptr
-            },
-            dist: {
-                src: ['dist/*.js']
-            }
         }, 
 
         // Remove all files from the dist folder
@@ -46,9 +35,22 @@ module.exports = function(grunt) {
                     filter: 'isFile',
                     rename: function(dest, src) {
                         // Change the path name utilize underscores for folders
-                        return dest + src.replace(/\//g,'_');
+                        return dest + src.replace(/\//g,'.');
                     }
                 }]
+            }
+        },
+
+        // Uploading source files from dist/ folder to Screeps server
+        screeps: {
+            options: {
+                email: email,
+                password: password,
+                branch: branch,
+                ptr: ptr
+            },
+            dist: {
+                src: ['dist/*.js']
             }
         }
     });
